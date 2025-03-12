@@ -9,7 +9,7 @@ namespace TestModForRepo
     {
         public const string pluginGuid = "yngprodaction.repo.testing";
         public const string pluginName = "R.E.P.O. testing";
-        public const string pluginVersion = "0.0.1";
+        public const string pluginVersion = "0.5.0";
 
         public void Awake()
         {
