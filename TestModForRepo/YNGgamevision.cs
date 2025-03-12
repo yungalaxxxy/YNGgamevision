@@ -1,8 +1,8 @@
 ﻿using BepInEx;
 using HarmonyLib;
-using TestModForRepo.Patches;
+using YNGGANEVISION.Patches;
 
-namespace TestModForRepo
+namespace YNGGANEVISION
 {
     [BepInPlugin(pluginGuid, pluginName, pluginVersion)]
     public class YngGameVision: BaseUnityPlugin

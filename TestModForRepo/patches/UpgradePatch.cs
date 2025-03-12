@@ -6,7 +6,7 @@ using HarmonyLib;
 using Photon.Pun;
 using Steamworks;
 
-namespace TestModForRepo.Patches;
+namespace YNGGANEVISION.Patches;
 
 [HarmonyPatch(typeof(PunManager))]
 public static class UpgradePatch

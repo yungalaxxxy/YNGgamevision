@@ -1,7 +1,7 @@
 ﻿using System;
 using HarmonyLib;
 
-namespace TestModForRepo.Patches;
+namespace YNGGANEVISION.Patches;
 
 [HarmonyPatch(typeof(PlayerAvatar))]
 public static class TextChatPatch
