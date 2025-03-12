@@ -7,8 +7,8 @@
     <ProjectGuid>{DF5667D6-D34D-4067-8647-E904005683FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestModForRepo</RootNamespace>
-    <AssemblyName>TestModForRepo</AssemblyName>
+    <RootNamespace>YNGgamevision</RootNamespace>
+    <AssemblyName>YNGgamevision</AssemblyName>
     <LangVersion>10</LangVersion>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
