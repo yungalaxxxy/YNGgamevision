@@ -365,3 +365,4 @@ FodyWeavers.xsd
 
 # dependencies folder
 /dependencies
+/schemaForThunderstore
