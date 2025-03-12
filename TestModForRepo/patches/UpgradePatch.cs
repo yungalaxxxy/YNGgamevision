@@ -1,6 +1,4 @@
-﻿
-using BepInEx.Logging;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Photon.Pun;
 
 
