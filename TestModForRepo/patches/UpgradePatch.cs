@@ -16,7 +16,7 @@ public static class UpgradePatch
     public static bool UpgradePlayerEnergyPatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
     {
         var logger = Logger.CreateLogSource("[UpdatePlayerEnergy]");
-        logger.LogInfo($"called");
+        logger.LogInfo($"Energy buff for all!");
         Dictionary<string, int> playerUpgradeStamina = ___statsManager.playerUpgradeStamina;
         var players = SemiFunc.PlayerGetAll();
         if (SemiFunc.IsMasterClientOrSingleplayer())

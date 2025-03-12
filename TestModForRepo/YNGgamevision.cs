@@ -5,11 +5,11 @@ using TestModForRepo.Patches;
 namespace TestModForRepo
 {
     [BepInPlugin(pluginGuid, pluginName, pluginVersion)]
-    public class TestMod: BaseUnityPlugin
+    public class YngGameVision: BaseUnityPlugin
     {
         public const string pluginGuid = "yngprodaction.repo.vision";
-        public const string pluginName = "R.E.P.O. testing";
-        public const string pluginVersion = "0.5.0";
+        public const string pluginName = "YNGGAMEVISION";
+        public const string pluginVersion = "1.0.1";
 
         public void Awake()
         {
