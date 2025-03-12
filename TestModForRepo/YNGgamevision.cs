@@ -9,7 +9,7 @@ namespace YNGGANEVISION
     {
         public const string pluginGuid = "yngprodaction.repo.vision";
         public const string pluginName = "YNGGAMEVISION";
-        public const string pluginVersion = "1.1.0";
+        public const string pluginVersion = "1.1.1";
 
         public void Awake()
         {
