@@ -373,6 +373,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="utils\configmanager.cs" />
     <Compile Include="YNGgamevision.cs" />
     <Compile Include="patches\TextChatPatch.cs" />
     <Compile Include="patches\UpgradePatch.cs" />

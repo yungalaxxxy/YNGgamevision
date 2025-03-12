@@ -9,15 +9,26 @@ namespace YNGGANEVISION
     {
         public const string pluginGuid = "yngprodaction.repo.vision";
         public const string pluginName = "YNGGAMEVISION";
-        public const string pluginVersion = "1.0.1";
+        public const string pluginVersion = "1.1.0";
 
         public void Awake()
         {
             Logger.LogInfo($"Mod {pluginName} was launched");
             Harmony harmony = new Harmony(pluginGuid);
-            harmony.PatchAll(typeof(TextChatPatch));
-            harmony.PatchAll(typeof(UpgradePatch));
-            Logger.LogInfo($"Method ChatMessageSend was altered");
+            ConfigManager.Initialize(Config);
+
+            if (ConfigManager.useUpgradePatch.Value)
+            {
+                harmony.PatchAll(typeof(TextChatPatch));
+                Logger.LogInfo("TextChat patch applied");
+            }
+            if (ConfigManager.useTextPatch.Value)
+            {
+                harmony.PatchAll(typeof(UpgradePatch));
+                Logger.LogInfo("Upgrade patch applied");
+            }
+
+            Logger.LogInfo($"{pluginName} was initialized!");
         }
     }
 }
