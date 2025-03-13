@@ -38,17 +38,17 @@ namespace YNGGAMEVISION
                     "Flag for Sprint patch.",
                     new AcceptableValueList<bool>(false, true)
                 ));
-            SprintDrain = config.Bind("Sprint Settings", "SprintDrain", 6f,
+            SprintDrain = config.Bind("Sprint Settings", "SprintDrain", 5f,
                 new ConfigDescription(
                     "How fast ur stamina draining while sprint. In-game default value is 1f.",
                     new AcceptableValueRange<float>(0f, 20f)
                 ));
-            SprintRechargeTime = config.Bind("Sprint Settings", "SprintRechargeTime", 0.3f,
+            SprintRechargeTime = config.Bind("Sprint Settings", "SprintRechargeTime", 0.5f,
                 new ConfigDescription(
                     "How fast ur stamina stars recharging. In-game default value is 1f.",
                     new AcceptableValueRange<float>(0f, 5f)
                 ));
-            SprintRechargeAmount = config.Bind("Sprint Settings", "SprintRechargeAmount", 5f,
+            SprintRechargeAmount = config.Bind("Sprint Settings", "SprintRechargeAmount", 3f,
                 new ConfigDescription(
                     "Changes recharge amount per second. In-game default value is 2f.",
                     new AcceptableValueRange<float>(0f, 20f)
