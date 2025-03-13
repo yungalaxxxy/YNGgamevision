@@ -1,7 +1,6 @@
-﻿using System;
-using HarmonyLib;
+﻿using HarmonyLib;
 
-namespace YNGGANEVISION.Patches;
+namespace YNGGAMEVISION.Patches;
 
 [HarmonyPatch(typeof(PlayerAvatar))]
 public static class TextChatPatch

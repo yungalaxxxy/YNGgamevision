@@ -2,13 +2,13 @@
 using Photon.Pun;
 
 
-namespace YNGGANEVISION.Patches;
+namespace YNGGAMEVISION.Patches;
 
 public static class UpgradePatch
 {
     [HarmonyPatch(typeof(ItemUpgradePlayerEnergy), nameof(ItemUpgradePlayerEnergy.Upgrade))]
     [HarmonyPrefix]
-    public static bool UpgradePlayerEnergyPatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
+    public static bool UpgradePlayerEnergyPatch()
     {
         var players = SemiFunc.PlayerGetAll();
         foreach (var player in players)
@@ -21,7 +21,7 @@ public static class UpgradePatch
 
     [HarmonyPatch(typeof(ItemUpgradePlayerHealth), nameof(ItemUpgradePlayerHealth.Upgrade))]
     [HarmonyPrefix]
-    public static bool UpgradePlayerHealthPatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
+    public static bool UpgradePlayerHealthPatch()
     {
         var players = SemiFunc.PlayerGetAll();
 
@@ -35,7 +35,7 @@ public static class UpgradePatch
 
     [HarmonyPatch(typeof(ItemUpgradePlayerExtraJump), nameof(ItemUpgradePlayerExtraJump.Upgrade))]
     [HarmonyPrefix]
-    public static bool UpgradePlayerExtraJumpPatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
+    public static bool UpgradePlayerExtraJumpPatch()
     {
         var players = SemiFunc.PlayerGetAll();
 
@@ -50,7 +50,7 @@ public static class UpgradePatch
 
     [HarmonyPatch(typeof(ItemUpgradeMapPlayerCount), nameof(ItemUpgradeMapPlayerCount.Upgrade))]
     [HarmonyPrefix]
-    public static bool UpgradeMapPlayerCountPatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
+    public static bool UpgradeMapPlayerCountPatch()
     {
         var players = SemiFunc.PlayerGetAll();
 
@@ -66,7 +66,7 @@ public static class UpgradePatch
 
     [HarmonyPatch(typeof(ItemUpgradePlayerTumbleLaunch), nameof(ItemUpgradePlayerTumbleLaunch.Upgrade))]
     [HarmonyPrefix]
-    public static bool UpgradePlayerTumbleLaunchPatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
+    public static bool UpgradePlayerTumbleLaunchPatch()
     {
         var players = SemiFunc.PlayerGetAll();
 
@@ -81,7 +81,7 @@ public static class UpgradePatch
 
     [HarmonyPatch(typeof(ItemUpgradePlayerSprintSpeed), nameof(ItemUpgradePlayerSprintSpeed.Upgrade))]
     [HarmonyPrefix]
-    public static bool UpgradePlayerSprintSpeedPatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
+    public static bool UpgradePlayerSprintSpeedPatch()
     {
         var players = SemiFunc.PlayerGetAll();
 
@@ -96,7 +96,7 @@ public static class UpgradePatch
 
     [HarmonyPatch(typeof(ItemUpgradePlayerGrabStrength), nameof(ItemUpgradePlayerGrabStrength.Upgrade))]
     [HarmonyPrefix]
-    public static bool UpgradePlayerGrabStrengthPatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
+    public static bool UpgradePlayerGrabStrengthPatch()
     {
         var players = SemiFunc.PlayerGetAll();
 
@@ -111,7 +111,7 @@ public static class UpgradePatch
 
     [HarmonyPatch(typeof(ItemUpgradePlayerGrabThrow), nameof(ItemUpgradePlayerGrabThrow.Upgrade))]
     [HarmonyPrefix]
-    public static bool UpgradePlayerThrowStrengthPatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
+    public static bool UpgradePlayerThrowStrengthPatch()
     {
         var players = SemiFunc.PlayerGetAll();
 
@@ -126,7 +126,7 @@ public static class UpgradePatch
 
     [HarmonyPatch(typeof(ItemUpgradePlayerGrabRange), nameof(ItemUpgradePlayerGrabRange.Upgrade))]
     [HarmonyPrefix]
-    public static bool UpgradePlayerGrabRangePatch(PunManager __instance, StatsManager ___statsManager, PhotonView ___photonView)
+    public static bool UpgradePlayerGrabRangePatch()
     {
         var players = SemiFunc.PlayerGetAll();
 

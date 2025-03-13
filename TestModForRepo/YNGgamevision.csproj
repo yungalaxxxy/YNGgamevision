@@ -373,6 +373,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="patches\HealPatch.cs" />
+    <Compile Include="patches\SprintPatch.cs" />
     <Compile Include="utils\configmanager.cs" />
     <Compile Include="YNGgamevision.cs" />
     <Compile Include="patches\TextChatPatch.cs" />
